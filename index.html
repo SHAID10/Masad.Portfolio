@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masad Shaid - Full Stack Developer & Cybersecurity Expert</title>
+    <meta name="description" content="Masad Shaid - Passionate Full Stack Developer and Cybersecurity Expert from Cameroon. Available for freelance projects.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png">
+    <body>
+    
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loader"></div>
+    </div>
+
+    <div class="progress-bar" id="progressBar"></div>
+
+
+    <div class="dots-bg" id="globalDots"></div>
+
+   
+    <header>
+        <div class="logo">⚜️ LEGEND</div>
+        
+        <button class="mobile-menu-toggle" id="mobileMenuToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <nav class="nav-menu" id="navMenu">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+        
+        <a href="#contact" class="download-btn" onclick="downloadCV()">📥 Download CV</a>
+    </header>
+
+ 
+    <section id="home" class="hero red-section fade-in">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>HELLO, I AM</h1>
+                <h2>MASAD SHAID</h2>
+                <p>Full Stack Developer & Cybersecurity Expert from Cameroon</p>
+                <div class="cta-section">
+                    <a href="#contact" class="start-btn">Start Consulting</a>
+                    <div class="status">
+                        <span class="status-dot"></span>
+                        <span>Available for Freelance</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-circle">
+                    <img src="profile.jpeg" 
+                         alt="Masad Shaid - Full Stack Developer" loading="lazy">
+                </div>
+                <!-- RESPONSIVE CIRCLES -->
+                <div class="decorative-circle circle-1"></div>
+                <div class="decorative-circle circle-2"></div>
+                <div class="decorative-circle circle-3"></div>
+                <div class="decorative-circle circle-4"></div>
+                <div class="decorative-circle circle-5"></div>
+                <div class="decorative-circle circle-6"></div>
+                <div class="decorative-circle circle-7"></div>
+                <div class="decorative-circle circle-8"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section (Dark = Red Lines) -->
+    <section id="about" class="container dark-section">
+        <section class="about-section fade-in">
+            <div class="about-left">
+                <h2>About Me</h2>
+                <p>Passionate Full Stack Developer and Cybersecurity Expert specializing in secure, scalable web applications. Currently studying Software Engineering at University of Yaoundé 1.</p>
+                <a href="#" class="download-btn" onclick="downloadCV()" style="display: inline-block; margin: 1.5rem 0;">📥 Download CV</a>
+                <div class="social-links">
+                    <a href="#" class="social-btn facebook" title="Facebook" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-btn instagram" title="Instagram" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    
+                    <a href="#" class="social-btn linkedin" title="LinkedIn" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-btn github" title="GitHub" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="about-right">
+                <p class="about-text">
+                    I build robust web applications and secure digital infrastructure. My expertise includes modern web technologies, 
+                    RESTful APIs, database management, and cybersecurity best practices.
+                </p>
+                <p class="about-text">
+                    <strong>Core Technologies:</strong> React, Node.js, Express, MongoDB, PostgreSQL, Python, Docker, AWS, Git
+                </p>
+            </div>
+        </section>
+
+        <div class="info-grid fade-in">
+            <div>
+                <h3 style="text-align: center; margin-bottom: 1.5rem; color: var(--accent-pink);">Personal Information</h3>
+                <div class="info-item">
+                    <span class="info-label">🗺️ Location</span>
+                    <span class="info-value">Yaoundé, Messassi, Cameroon 🇨🇲</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">📧 Email</span>
+                    <span class="info-value">shaid.masad@facscience-uy1.cm</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">📱 Phone</span>
+                    <span class="info-value">+237 675 674 634</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">🎓 Education</span>
+                    <span class="info-value">University of Yaoundé 1</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">💼 Availability</span>
+                    <span class="info-value">Available for Freelance</span>
+                </div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Frontend</h3>
+                    <div class="percentage">95%</div>
+                    <p>JavaScript, HTML5, CSS3</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-server"></i>
+                    <h3>Backend</h3>
+                    <div class="percentage">90%</div>
+                    <p>Node.js, Express, Python</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Cybersecurity</h3>
+                    <div class="percentage">80%</div>
+                    <p>Security Auditing & Protection</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Databases</h3>
+                    <div class="percentage">88%</div>
+                    <p>MySQL</p>
+                </div>
+                 <div class="skill-card">
+                    <i class="fas fa-paintbrush"></i>
+                    <h3>Design</h3>
+                    <div class="percentage">75%</div>
+                    <p>Figma</p>
+                    
+                </div>
+                 <div class="skill-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Problem Solving</h3>
+                    <div class="percentage">90%</div>
+                    <p>Algorithms</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Section -->
+        <section class="services-section fade-in">
+            <div class="section-label">WHAT I OFFER</div>
+            <h2>My Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🕸️</div>
+                    <h3>Web Development</h3>
+                    <p>Full-stack web applications with modern technologies and best practices</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔒</div>
+                    <h3>Cybersecurity</h3>
+                    <p>Security audits, penetration testing, and secure application development</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Mobile Apps</h3>
+                    <p>Cross-platform mobile applications using React Native and Flutter</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">☁️</div>
+                    <h3>Cloud Solutions</h3>
+                    <p>AWS, Azure, and Google Cloud deployment and management</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>Designing</h3>
+                    <p>Create good looking design for apps, website and also flyers</p>
+                </div>
+                
+            </div>
+        </section>
+    </section>
+
+    <!-- Projects Section (Red = Blue Lines) -->
+    <section id="projects" class="projects-section red-section fade-in">
+        <h2>Featured Projects</h2>
+        <p style="font-size: 1.2rem; opacity: 0.9; margin-bottom: 3rem;">Real-world applications showcasing my expertise</p>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1501167786227-4cba60f6d58f?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="E-commerce Platform" loading="lazy">
+                <div class="project-content">
+                    <h3>Bank application</h3>
+                    <p>Full-stack solution with payment integration and admin dashboard</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">JavaFX</span>
+                    </div>
+                    <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="https://plus.unsplash.com/premium_photo-1663076211121-36754a46de8d?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Task Management App" loading="lazy">
+                <div class="project-content">
+                    <h3>Simple Marriage Website</h3>
+                    <p>You can ask the Boystick if you want... I am dabord the Deathlegend </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</HTML></span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="https://plus.unsplash.com/premium_photo-1664297950425-99a968926a74?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1pbi1zYW1lLXNlcmllc3wxfHx8ZW58MHx8fHx8" alt="Security Dashboard" loading="lazy">
+                <div class="project-content">
+                    <h3>Security Dashboard</h3>
+                    <p>Real-time cybersecurity monitoring and threat detection</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">D3.js</span>
+                    </div>
+                    <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+             <div class="project-card">
+                <img src="https://www.blood-strike.com/pc/gw/20230718104343//img/bg1_be2e8ac.jpg" alt="Security Dashboard" loading="lazy">
+                <div class="project-content">
+                    <h3>Bloodstrike player</h3>
+                    <p>Bloodstrike >>> CODM</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">RETRO</span>
+                        <span class="tech-tag">Boystick</span>
+                        <span class="tech-tag">DeathLegend</span>
+                    </div>
+                    <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section (Dark = Red Lines) -->
+    <section id="contact" class="contact-section dark-section fade-in">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p class="contact-subtitle">Ready to start your next project? Let's discuss your ideas!</p>
+            <div class="contact-content">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="What are we working on?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn" id="submitBtn">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email Me</h3>
+                        <p>shaid.masad@facscience-uy1.cm</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Call Me</h3>
+                        <p>+237 675 674 634</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>I'm Located In</h3>
+                        <p>Yaoundé, Messassi</p>
+                        <p style="color: #aaa; font-size: 0.9rem;">Cameroon 🇨🇲</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">⚜️ Masad Shaid</div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2025 Masad Shaid. All rights reserved. | Member of RAKs Community
+        </div>
+    </footer>
+
+    <script>
+        // 🎨 ADVANCED ANIMATION MANAGER - YOUR EXACT SPECIFICATIONS
+                // 🎨 ADVANCED ANIMATION MANAGER - YOUR EXACT SPECIFICATIONS
+        class AnimationManager {
+            constructor() {
+                this.deviceType = this.detectDevice();
+                this.currentSection = 'red';
+                this.initAnimations();
+                this.bindEvents();
+            }
+
+            detectDevice() {
+                const width = window.innerWidth;
+                if (width < 640) return 'mobile';
+                if (width < 1024) return 'tablet';
+                return 'desktop';
+            }
+
+            getLineCount() {
+                const config = {
+                    mobile: 10,      // ✅ 3 subtle lines
+                    tablet: 7,      // ✅ 7 animated lines
+                    desktop: 12     // ✅ 12 premium lines
+                };
+                return config[this.deviceType];
+            }
+
+            initAnimations() {
+                this.createAnimatedLines();
+                this.updateLinesOnScroll();
+                if (this.deviceType === 'desktop') {
+                    this.addPremiumParticles();
+                }
+            }
+
+            createAnimatedLines() {
+                const container = document.getElementById('globalDots');
+                const lineCount = this.getLineCount();
+                
+                container.innerHTML = '';
+
+                const lineTypes = [
+                    { class: 'horizontal', weight: 0.4 },
+                    { class: 'vertical', weight: 0.3 },
+                    { class: 'diagonal', weight: 0.2 },
+                    { class: 'diagonal-reverse', weight: 0.1 }
+                ];
+
+                for (let i = 0; i < lineCount; i++) {
+                    const line = document.createElement('div');
+                    line.className = 'line';
+
+                    // Weighted random selection
+                    const rand = Math.random();
+                    let cumulative = 0;
+                    let selectedType = lineTypes[0];
+                    
+                    for (const type of lineTypes) {
+                        cumulative += type.weight;
+                        if (rand <= cumulative) {
+                            selectedType = type;
+                            break;
+                        }
+                    }
+
+                    line.classList.add(selectedType.class);
+
+                    // Smart positioning
+                    if (selectedType.class.includes('horizontal')) {
+                        line.style.top = `${Math.random() * 100}%`;
+                        line.style.left = '0';
+                    } else if (selectedType.class.includes('vertical')) {
+                        line.style.left = `${Math.random() * 100}%`;
+                        line.style.top = '0';
+                    } else {
+                        line.style.left = `${-50 + Math.random() * 100}%`;
+                        line.style.top = `${-50 + Math.random() * 100}%`;
+                    }
+
+                    // Staggered timing
+                    const delay = (i * 1.5) / lineCount;
+                    line.style.animationDelay = `${delay}s`;
+
+                    container.appendChild(line);
+                }
+                
+                // Initialize with current section colors
+                this.updateLinesOnScroll();
+            }
+
+            updateLinesOnScroll() {
+                const container = document.getElementById('globalDots');
+                const sections = document.querySelectorAll('.red-section, .dark-section');
+                
+                window.addEventListener('scroll', () => {
+                    const scrollPos = window.scrollY + window.innerHeight / 2;
+                    
+                    let currentSectionType = 'red';
+                    sections.forEach(section => {
+                        const sectionTop = section.offsetTop;
+                        const sectionBottom = sectionTop + section.offsetHeight;
+                        
+                        if (scrollPos >= sectionTop && scrollPos < sectionBottom) {
+                            currentSectionType = section.classList.contains('red-section') ? 'red' : 'dark';
+                        }
+                    });
+                    
+                    // Update container class for color switching
+                    if (currentSectionType !== this.currentSection) {
+                        this.currentSection = currentSectionType;
+                        container.className = 'dots-bg';
+                        container.classList.add(currentSectionType === 'red' ? 'red-section' : 'dark-section');
+                    }
+                });
+                
+                // Initial call
+                container.classList.add('red-section');
+            }
+            addPremiumParticles() {
+                // Desktop-only floating particles
+                const hero = document.querySelector('.hero');
+                for (let i = 0; i < 8; i++) {
+                    const particle = document.createElement('div');
+                    particle.style.cssText = `
+                        position: absolute;
+                        width: ${8 + Math.random() * 8}px;
+                        height: ${8 + Math.random() * 8}px;
+                        background: var(--blue-primary);
+                        border-radius: 50%;
+                        top: ${Math.random() * 100}%;
+                        left: ${Math.random() * 100}%;
+                        opacity: 0.2;
+                        animation: particleFloat ${12 + Math.random() * 10}s infinite ease-in-out;
+                        animation-delay: ${Math.random() * 5}s;
+                        z-index: 1;
+                        box-shadow: 0 0 10px var(--blue-glow);
+                    `;
+                    hero.appendChild(particle);
+                }
+            }
+
+            bindEvents() {
+                // Reinitialize on resize
+                let resizeTimeout;
+                window.addEventListener('resize', () => {
+                    clearTimeout(resizeTimeout);
+                    resizeTimeout = setTimeout(() => {
+                        const newDeviceType = this.detectDevice();
+                        if (newDeviceType !== this.deviceType) {
+                            this.deviceType = newDeviceType;
+                            this.createAnimatedLines();
+                        }
+                    }, 250);
+                });
+
+                // Performance: Respect reduced motion preference
+                if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                    document.querySelectorAll('.line, .decorative-circle').forEach(el => {
+                        el.style.animation = 'none';
+                    });
+                }
+            }
+        }
+
+        // COMPLETE INITIALIZATION
+        document.addEventListener('DOMContentLoaded', function() {
+            // 🎨 Initialize Animations
+            new AnimationManager();
+
+            // Loading screen
+            const loadingOverlay = document.getElementById('loadingOverlay');
+            setTimeout(() => {
+                loadingOverlay.classList.add('hidden');
+            }, 2000);
+
+            // Mobile menu toggle
+            const mobileToggle = document.getElementById('mobileMenuToggle');
+            const navMenu = document.getElementById('navMenu');
+            
+            mobileToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('nav-open');
+                const icon = mobileToggle.querySelector('i');
+                icon.classList.toggle('fa-bars');
+                icon.classList.toggle('fa-times');
+            });
+
+            // Close mobile menu when clicking on a link
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('nav-open');
+                    mobileToggle.querySelector('i').classList.add('fa-bars');
+                    mobileToggle.querySelector('i').classList.remove('fa-times');
+                });
+            });
+
+            // Progress bar
+            function updateProgressBar() {
+                const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                const scrolled = (winScroll / height) * 100;
+                document.getElementById('progressBar').style.width = scrolled + '%';
+            }
+
+            window.addEventListener('scroll', updateProgressBar);
+
+            // Scroll animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -100px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+            // Contact form
+            const contactForm = document.getElementById('contactForm');
+            const submitBtn = document.getElementById('submitBtn');
+
+            contactForm.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+
+                try {
+                    await new Promise(resolve => setTimeout(resolve, 1500));
+                    
+                    const formData = {
+                        name: document.getElementById('name').value,
+                        email: document.getElementById('email').value,
+                        subject: document.getElementById('subject').value,
+                        message: document.getElementById('message').value
+                    };
+
+                    console.log('Form submitted:', formData);
+                    
+                    alert('🎉 Message sent successfully! I\'ll get back to you within 24 hours.');
+                    contactForm.reset();
+                } catch (error) {
+                    alert('❌ Failed to send message. Please try again.');
+                }
+
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = 'Send Message';
+            });
+
+            // Smooth scrolling
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        const offsetTop = target.offsetTop - 80;
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Active navigation on scroll
+            window.addEventListener('scroll', () => {
+                let current = '';
+                const sections = document.querySelectorAll('section[id]');
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 100;
+                    if (window.pageYOffset >= sectionTop) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${current}`) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+
+            // CV Download Function
+            window.downloadCV = function() {
+                const cvContent = `Masad Shaid - Full Stack Developer & Cybersecurity Expert
+
+CONTACT INFORMATION
+Email: shaid.masad@facscience-uy1.cm
+Phone: +237 675 674 634
+Location: Yaoundé, Cameroon
+LinkedIn: linkedin.com/in/masadshaid
+GitHub: github.com/masadshaid
+
+PROFESSIONAL SUMMARY
+Full Stack Developer and Cybersecurity Expert specializing in secure web applications
+University of Yaoundé 1 - Software Engineering Student
+
+TECHNICAL SKILLS
+Frontend: React, JavaScript (ES6+), HTML5, CSS3, Tailwind CSS
+Backend: Node.js, Express, Python, RESTful APIs
+Database: MongoDB, PostgreSQL, MySQL
+DevOps: Docker, AWS, Git, CI/CD
+Cybersecurity: Penetration Testing, Vulnerability Assessment
+
+KEY PROJECTS
+• E-Commerce Platform - Full-stack with Stripe integration
+• Task Management System - Real-time collaboration
+• Security Dashboard - Threat monitoring & analytics
+
+EDUCATION
+Bachelor of Software Engineering
+University of Yaoundé 1 | 2022 - Present
+`;
+
+                const blob = new Blob([cvContent], { type: 'text/plain;charset=utf-8' });
+                const link = document.createElement('a');
+                link.href = URL.createObjectURL(blob);
+                link.download = 'Masad-Shaid-Resume.txt';
+                link.click();
+                URL.revokeObjectURL(link.href);
+
+                setTimeout(() => {
+                    alert('📥 Resume downloaded successfully!');
+                }, 300);
+            };
+        });
+
+        // Add particle animation CSS
+        const particleStyle = document.createElement('style');
+        particleStyle.textContent = `
+            @keyframes particleFloat {
+                0%, 100% { 
+                    transform: translateY(0px) translateX(0px) scale(1); 
+                    opacity: 0.2;
+                }
+                33% { 
+                    transform: translateY(-30px) translateX(15px) scale(1.2); 
+                    opacity: 0.5;
+                }
+                66% { 
+                    transform: translateY(-15px) translateX(-10px) scale(0.9); 
+                    opacity: 0.3;
+                }
+            }
+        `;
+        document.head.appendChild(particleStyle);
+    </script>
+</body>
+</html>
