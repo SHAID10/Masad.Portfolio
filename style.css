@@ -439,7 +439,7 @@
         }
 
         .hero-text h2 {
-            font-size: clamp(2.5rem, 8vw, 4.5rem);
+            font-size: 75px;
             font-weight: 800;
             margin-bottom: 1.5rem;
             background: linear-gradient(135deg, var(--text-light), var(--accent-pink));
