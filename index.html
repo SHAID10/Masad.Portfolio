@@ -324,8 +324,7 @@
     </footer>
 
     <script>
-        // 🎨 ADVANCED ANIMATION MANAGER - YOUR EXACT SPECIFICATIONS
-                // 🎨 ADVANCED ANIMATION MANAGER - YOUR EXACT SPECIFICATIONS
+       
         class AnimationManager {
             constructor() {
                 this.deviceType = this.detectDevice();
@@ -409,7 +408,7 @@
                     container.appendChild(line);
                 }
                 
-                // Initialize with current section colors
+               
                 this.updateLinesOnScroll();
             }
 
@@ -430,7 +429,7 @@
                         }
                     });
                     
-                    // Update container class for color switching
+
                     if (currentSectionType !== this.currentSection) {
                         this.currentSection = currentSectionType;
                         container.className = 'dots-bg';
@@ -438,11 +437,11 @@
                     }
                 });
                 
-                // Initial call
+              
                 container.classList.add('red-section');
             }
             addPremiumParticles() {
-                // Desktop-only floating particles
+             
                 const hero = document.querySelector('.hero');
                 for (let i = 0; i < 8; i++) {
                     const particle = document.createElement('div');
@@ -465,7 +464,7 @@
             }
 
             bindEvents() {
-                // Reinitialize on resize
+             
                 let resizeTimeout;
                 window.addEventListener('resize', () => {
                     clearTimeout(resizeTimeout);
@@ -487,18 +486,18 @@
             }
         }
 
-        // COMPLETE INITIALIZATION
+    
         document.addEventListener('DOMContentLoaded', function() {
-            // 🎨 Initialize Animations
+            
             new AnimationManager();
 
-            // Loading screen
+            
             const loadingOverlay = document.getElementById('loadingOverlay');
             setTimeout(() => {
                 loadingOverlay.classList.add('hidden');
             }, 2000);
 
-            // Mobile menu toggle
+      
             const mobileToggle = document.getElementById('mobileMenuToggle');
             const navMenu = document.getElementById('navMenu');
             
@@ -509,7 +508,7 @@
                 icon.classList.toggle('fa-times');
             });
 
-            // Close mobile menu when clicking on a link
+            
             document.querySelectorAll('.nav-link').forEach(link => {
                 link.addEventListener('click', () => {
                     navMenu.classList.remove('nav-open');
@@ -518,7 +517,7 @@
                 });
             });
 
-            // Progress bar
+          
             function updateProgressBar() {
                 const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
                 const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -528,7 +527,7 @@
 
             window.addEventListener('scroll', updateProgressBar);
 
-            // Scroll animations
+           
             const observerOptions = {
                 threshold: 0.1,
                 rootMargin: '0px 0px -100px 0px'
@@ -544,7 +543,7 @@
 
             document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-            // Contact form
+            
             const contactForm = document.getElementById('contactForm');
             const submitBtn = document.getElementById('submitBtn');
 
