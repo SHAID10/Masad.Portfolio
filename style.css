@@ -648,6 +648,47 @@
      }
  }
 
+ /* Hero Animations */
+ .hero-text h1,
+ .hero-text h2,
+ .hero-text p,
+ .cta-section,
+ .hero-image {
+     opacity: 0;
+     transform: translateY(30px);
+     transition: all 0.8s ease;
+ }
+
+ body.loaded .hero-text h1 {
+     opacity: 1;
+     transform: translateY(0);
+     transition-delay: 0.2s;
+ }
+
+ body.loaded .hero-text h2 {
+     opacity: 1;
+     transform: translateY(0);
+     transition-delay: 0.4s;
+ }
+
+ body.loaded .hero-text p {
+     opacity: 1;
+     transform: translateY(0);
+     transition-delay: 0.6s;
+ }
+
+ body.loaded .cta-section {
+     opacity: 1;
+     transform: translateY(0);
+     transition-delay: 0.8s;
+ }
+
+ body.loaded .hero-image {
+     opacity: 1;
+     transform: translateY(0);
+     transition-delay: 1.0s;
+ }
+
  /* Container */
  .container {
      max-width: 1200px;
