@@ -42,7 +42,7 @@
     </header>
 
 
-    <section id="home" class="hero red-section fade-in">
+    <section id="home" class="hero red-section">
         <div class="hero-content">
             <div class="hero-text">
                 <h1>HELLO, I AM</h1>
@@ -552,6 +552,7 @@
             const loadingOverlay = document.getElementById('loadingOverlay');
             setTimeout(() => {
                 loadingOverlay.classList.add('hidden');
+                document.body.classList.add('loaded');
             }, 2000);
 
 
